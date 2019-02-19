@@ -23,7 +23,7 @@ val pipe = Pipeline().apply {
                     imageResource = Task.Resource(
                         type = "docker-image",
                         source = mapOf(
-                            "resource" to "maven"
+                            "repository" to "maven"
                         )
                     ),
                     run = Task.RunConfig("/bin/sh", args = mutableListOf("-c", """
